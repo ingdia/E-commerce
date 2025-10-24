@@ -1,5 +1,9 @@
 function CartPage (){
-    return(<></>)
+    return(<>
+    <div>
+        
+    </div>
+    </>)
 
 }
 export default CartPage
