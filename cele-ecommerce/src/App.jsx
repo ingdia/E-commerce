@@ -5,7 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import ProductsPage from './pages/ProductsPage'
 
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,7 +20,8 @@ function App() {
         <Route path='/About' element ={<About/>}/>
         <Route path= '/Contact' element ={<Contact/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
+
      </Router>
     </>
   )

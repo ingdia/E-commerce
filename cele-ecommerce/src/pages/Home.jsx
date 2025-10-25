@@ -42,7 +42,7 @@ function Home (){
         </div>
         {/* the new updates */}
         <div className="col-span-1 ">
-            <div className="max-h-[500px] rounded-2xl bg-blue-50 flex flex-col items-center p-16 justify-center text-center">
+            <div className="max-h-[500px] rounded-2xl bg-blue-300 flex flex-col items-center p-16 justify-center text-center">
                 <p className="bg-red-600  text-white w-[120px] flex items-center p-1 font-bold justify-center rounded-bl-2xl rounded-tr-2xl">New arrival</p>
                 <h2 className="text-3xl p-2 text-black font-bold">Smart Watch</h2>
                 <p className=" text-gray-600">Today's super offer</p>

@@ -10,7 +10,7 @@ function Navbar() {
     return( 
     <>
     {/* the Destop navbar  */}
-    <header className="hidden md:flex justify-between  items-center bg-white text-black py-1 px-12 shadow-lg border-b-2 border-blue-600">
+    <header className="hidden md:flex font-serif justify-between  items-center bg-white text-black py-1 px-12 shadow-lg border-b-2 border-blue-600">
        <div> <img src={logo} alt="logo" className='w-40 h-10 lg:w-60 lg:h-20 rounded-2xl lg:p-2'/></div>
         <nav className='flex space-x-4 font-bold '>
             <Link to= "/" className='hover:text-red-400 text-blue-600'>Home</Link>
