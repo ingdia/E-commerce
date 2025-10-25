@@ -6,6 +6,7 @@ import asideImg from '../assets/images/side.png'
 import { ShoppingCart } from "lucide-react"
 import ProductCards from "../components/ProductCards"
 
+
 function Home (){
      const productCards = [
      {id:1, name:"Iphone" , image:slide4img, amount: "50000", Icon:ShoppingCart , Category:"Tablet"},
@@ -19,7 +20,7 @@ function Home (){
      
  ]
     return(<>
-    <section className="py-10 px-16 font-serif grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-4 ">
+    <section className="py-10 px-16 bg-gray-200 font-serif grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-4 ">
         {/* left sliding image */}
         <div className="col-span-2  ">
            <div className="bg-black max-h-[600px] rounded-2xl text-white flex flex-col md:flex-row p-16 justify-between gap-12" > 
@@ -41,7 +42,7 @@ function Home (){
         </div>
         {/* the new updates */}
         <div className="col-span-1 ">
-            <div className="max-h-[500px] rounded-2xl bg-gray-200 flex flex-col items-center p-16 justify-center text-center">
+            <div className="max-h-[500px] rounded-2xl bg-blue-50 flex flex-col items-center p-16 justify-center text-center">
                 <p className="bg-red-600  text-white w-[120px] flex items-center p-1 font-bold justify-center rounded-bl-2xl rounded-tr-2xl">New arrival</p>
                 <h2 className="text-3xl p-2 text-black font-bold">Smart Watch</h2>
                 <p className=" text-gray-600">Today's super offer</p>

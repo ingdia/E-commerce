@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ShoppingCart } from "lucide-react"
+import CategoryFilter from "./CategoryFilter";
 function ProductCards({productCards,title}){
 //  const productCards = props.productCards;
 //  const title = props.title
@@ -10,18 +11,21 @@ function addMeToCart (product){
   if(!myCartItem){
     let  myCartList = [...mycart, product]
          setaddToCart(myCartList)
+     
+        
     alert(`added ${product.name} added to cart`)
     console.log(product.name)//for the debug
     return myCartList
   }
   else
-    alert("product already exist in favorite list")
+    alert("product already exist in cart list")
 
 }
     
 return (
     <>
      <h2  className="text-black text-2xl font-bold">{title}</h2>
+     <CategoryFilter/>
       <div className="text-white grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 pt-10 gap-4">
         {
             productCards.map((post )=>(

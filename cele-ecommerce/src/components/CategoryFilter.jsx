@@ -18,7 +18,7 @@ const Categories = [
 
     return (
     <>
-        <div class="flex flex-col sm:flex-row space-x-4 pt-4 ">
+        <div class="flex flex-col md:flex-row space-x-4 pt-4 p-8 ">
       {
         Categories.map((category)=>(
           <div key={category.id} className="bg-red-100 p-3 rounded">
