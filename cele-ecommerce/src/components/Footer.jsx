@@ -19,13 +19,13 @@ return(
             
             {/* icons */}
             <div >
-            <div className='flex space-x-4 py-10'>
+            <div className='flex flex-col md:flex-row space-x-4 py-10'>
                 <Facebook className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full' />
                 <Twitter className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full'/>
                 <Instagram className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full'/>
                 <Linkedin className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full'/>
             </div>
-                <div className='flex gap-2'>
+                <div className='flex flex-col md:flex-row gap-2'>
                         <input type ="text" placeholder='Your Email address' className="border-2 rounded p-2 px-8 border-red-500"/>
                         <buttorn className="p-2 font-bold rounded px-6 bg-red-600">Subscribe</buttorn>
                 </div>
