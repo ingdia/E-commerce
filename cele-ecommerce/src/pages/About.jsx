@@ -1,4 +1,5 @@
 import image from "../assets/images/image.png"
+import imagebanner from "../assets/images/imagebanner.png"
 import { DollarSign, UserCheck, Award, ShieldCheck,ShoppingCart } from "lucide-react";
 
 
@@ -35,7 +36,7 @@ const whyChoose = [
     return(<>
     <div className="relative flex justify-center font-serif items-center p-10 bg-gray-200 ">
     
-       <img src={image} className="h-[400px] w-full rounded-2xl "/>
+       <img src={imagebanner} className="h-[400px] w-full rounded-2xl "/>
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-blue-800/80 to-transparent  rounded-2xl m-10"></div>
      
        <div className="absolute text-center flex inset-0 z-10 gap-1 text-white flex-col align-center justify-center">
@@ -72,16 +73,16 @@ const whyChoose = [
 
         </div>
     </div>
-    <div className="min-h-screen bg-black text-white m-20">
-         <h2> Our Story</h2>
-        <div className="flex p-10 justify-center items-center space-x-2"> 
-          
+    <div className="min-h-screen  flex flex-col justify-center items-center">
+         <h2  className="text-[40px] text-blue-600 pb-8"> Our Story</h2>
+        <div className="flex p-16 justify-center rounded-2xl text-[16px] bg-black text-white items-center gap-[70px]"> 
             <div>
-               <div>
-                <p>Founded in 2018 by Celestin Niyonsaba, Cele Electronics Ltd began with a simple mission — to make quality</p>
+                <p className="bg-red-600 md:w-[120px] flex items-center font-bold justify-center p-1 mb-10 rounded-bl-2xl rounded-tr-2xl">Our History</p>
+               <div className="pb-3">
+                <p>Founded in 2018 by Celestin Kwizera, Cele Electronics Ltd began with a simple mission — to make quality</p>
                <p>electronics accessible to everyone in Rwanda.</p>
                </div>
-               <div>
+               <div className="pb-6">
                 <p>What started as a small local shop in Kigali’s Town Center Building (TCB) has grown into one of the city’s</p>
                 <p>most trusted electronics retailers, known for its genuine products, affordable prices, and outstanding</p>
                <p>customer care.</p>
