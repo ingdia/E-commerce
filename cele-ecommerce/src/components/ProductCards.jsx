@@ -1,26 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { ShoppingCart } from "lucide-react"
 import CategoryFilter from "./CategoryFilter";
-function ProductCards({productCards,title}){
+function ProductCards({productCards,title, addMeToCart}){
 //  const productCards = props.productCards;
 //  const title = props.title
 
-const[mycart, setaddToCart] = useState([]);
-function addMeToCart (product){
-  const myCartItem = mycart.some((p)=> p.id === product.id) ;
-  if(!myCartItem){
-    let  myCartList = [...mycart, product]
-         setaddToCart(myCartList)
-     
-        
-    alert(`added ${product.name} added to cart`)
-    console.log(product.name)//for the debug
-    return myCartList
-  }
-  else
-    alert("product already exist in cart list")
 
-}
     
 return (
     <>

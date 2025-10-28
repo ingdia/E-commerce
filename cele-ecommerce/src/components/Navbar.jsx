@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo.jpg'
 import { ShoppingCart, User, Menu } from "lucide-react"
-function Navbar() {
+function Navbar({cartCount}) {
     const [isOpen, setOpen] = useState(false);
     function showMenu(){  
       setOpen(!isOpen);    
@@ -30,7 +30,7 @@ function Navbar() {
                 <ShoppingCart />
                 <div>
                     <h5 className='hidden text-[14px] lg:flex lg:text-[14px] font-bold'>My Cart</h5>
-                    <p className='hidden text-[12px] lg:flex lg:text-[14px] font-bold'>0 items</p>
+                    <p className='hidden text-[12px] lg:flex lg:text-[14px] font-bold'> <span className='bg-blue-700 text-white py-0.5 p-2 rounded-full justify-center items-center flex'>{cartCount}</span> items</p>
                 </div>
             </button>
         </div>

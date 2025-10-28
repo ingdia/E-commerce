@@ -10,7 +10,7 @@ import CategoryFilter from "../components/CategoryFilter";
 
 
 
-export default function ProductsPage() {
+export default function ProductsPage({addMeToCart}) {
   const [selectedCat, setSelectedCat] = useState("all"); // start with filtering on all Products
 
   const productCards = [
@@ -40,7 +40,7 @@ export default function ProductsPage() {
       <CategoryFilter setSelectedCategory={setSelectedCat} /> 
 
       {/* Products list */}
-      <ProductCards productCards={filteredProductsbyCat} title="filter by category" />
+      <ProductCards productCards={filteredProductsbyCat} addMeToCart={addMeToCart} title="filter by category" />
     </div>
   )
 }
