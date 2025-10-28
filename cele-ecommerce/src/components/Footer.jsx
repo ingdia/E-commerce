@@ -20,10 +20,10 @@ return(
             {/* icons */}
             <div >
             <div className='flex flex-col md:flex-row space-x-4 py-10'>
-                <Facebook className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full' />
-                <Twitter className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full'/>
-                <Instagram className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full'/>
-                <Linkedin className='w-[40px] h-[40px] p-2 border-2 border-red-500 rounded-full'/>
+                <Facebook className='w-10 h-10 p-2 border-2 border-red-500 rounded-full' />
+                <Twitter className='w-10 h-10 p-2 border-2 border-red-500 rounded-full'/>
+                <Instagram className='w-10 h-10 p-2 border-2 border-red-500 rounded-full'/>
+                <Linkedin className='w-10 h-10 p-2 border-2 border-red-500 rounded-full'/>
             </div>
                 <div className='flex flex-col md:flex-row gap-2'>
                         <input type ="text" placeholder='Your Email address' className="border-2 rounded p-2 px-8 border-red-500"/>
