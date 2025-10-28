@@ -25,11 +25,10 @@ function addMeToCart (product){
 return (
     <>
      <h2  className="text-black text-2xl font-bold">{title}</h2>
-     <CategoryFilter/>
       <div className="text-white grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 pt-10 gap-4">
         {
             productCards.map((post )=>(
-                  <div key={post.id} className="rounded-2xl p-4 hover:bg-gray-400 hover:border-2 border-red-500">
+                  <div key={post.id} className="rounded-2xl text-gray-600 hover:text-white p-4 hover:bg-gray-400 border-2 border-gray-500">
                     <img src={post.image}/>
                     <p>{post.name}</p>
                     <p>{post.amount}</p>

@@ -9,7 +9,7 @@ return(
         <div className='flex flex-col md:flex-row md:justify-between border-b pb-10 border-gray-500 '>
             <div>
                 <div><img src={logo}/></div>
-                <p>Cele Electronics Ltd – Your trusted source for genuine electronics in Kigali.</p> 
+                <p>Cele Electronics Ltd! Your trusted source for genuine electronics in Kigali.</p> 
                  <p>  We bring you quality, affordability, and expert service under one roof.</p>
                 <div>
                     <h3>Subscribe to our newsletter for regular updates about Offers, Coupons & more</h3>

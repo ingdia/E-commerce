@@ -5,6 +5,7 @@ import slide3img from '../assets/images/Slide3.png'
 import asideImg from '../assets/images/side.png'
 import { ShoppingCart } from "lucide-react"
 import ProductCards from "../components/ProductCards"
+import CategoryFilter from "../components/CategoryFilter"
 
 
 function Home (){
@@ -53,8 +54,9 @@ function Home (){
     </section>
 {/* this the section for  */}
     <section className="py-10 px-16 ">
+        <CategoryFilter  />
         <ProductCards productCards={productCards} title= {"The product page"}/>
-        {/* <ProductCards productCards={productCards.filter((product) => product.Category==="Smart Phone")} title= {"filter"}/> */}
+
     </section>
     </>)
 }
