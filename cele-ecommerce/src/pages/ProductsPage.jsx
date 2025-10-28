@@ -40,7 +40,7 @@ export default function ProductsPage() {
       <CategoryFilter setSelectedCategory={setSelectedCat} /> 
 
       {/* Products list */}
-      <ProductCards productCards={filteredProductsbyCat} title="Products" />
+      <ProductCards productCards={filteredProductsbyCat} title="filter by category" />
     </div>
   )
 }
