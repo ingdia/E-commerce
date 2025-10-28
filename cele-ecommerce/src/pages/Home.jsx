@@ -6,6 +6,8 @@ import asideImg from '../assets/images/side.png'
 import { ShoppingCart } from "lucide-react"
 import ProductCards from "../components/ProductCards"
 import CategoryFilter from "../components/CategoryFilter"
+import { Link } from "react-router-dom"
+import ProductsPage from "./ProductsPage"
 
 
 function Home (){
@@ -30,7 +32,7 @@ function Home (){
                 <h2 className="text-[40px]">New Arrival Just For you!</h2>
                 <p className="text-[16px]  text-gray-500">Fresh and reliable</p>
                 <p className="text-blue-500 text-[25px]">Enjoy the time </p>
-                <button className="bg-red-600 rounded p-3 font-bold mt-8 md:w-[150px]" >Shop Now</button>
+                <Link to='/ProductsPage'><button className="bg-red-600 rounded p-3 font-bold mt-8 md:w-[150px]" >Shop Now</button></Link>
             </div>
 
             <div>
